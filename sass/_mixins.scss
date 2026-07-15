@@ -52,3 +52,12 @@
     box-shadow: $shadow-hover;
   }
 }
+
+// Mixin para imagen de fondo con overlay de color
+// (para que el texto siempre se lea bien arriba de la foto)
+@mixin bg-image($url, $overlay: rgba($color-primary, 0.85)) {
+  background-image: linear-gradient($overlay, $overlay), url($url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

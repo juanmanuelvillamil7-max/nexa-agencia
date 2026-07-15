@@ -3,7 +3,7 @@
 // ===================================
 
 .hero {
-  background: linear-gradient(135deg, $color-primary 0%, darken($color-primary, 10%) 100%);
+  @include bg-image('https://picsum.photos/id/1040/1600/900');
   color: $color-white;
   padding: $spacing-xl * 1.5 0;
   position: relative;
@@ -36,8 +36,9 @@
 }
 
 // Hero mas chico para paginas internas (nosotros, servicios, etc)
+// Cada pagina tiene su propia imagen de fondo mediante un modificador
 .hero-interno {
-  background-color: $color-primary;
+  background-color: $color-primary; // color de respaldo por si la imagen tarda en cargar
   color: $color-white;
   padding: $spacing-lg * 2 0;
   text-align: center;
@@ -48,5 +49,21 @@
 
   p {
     color: rgba($color-white, 0.8);
+  }
+
+  &--nosotros {
+    @include bg-image('https://picsum.photos/id/1027/1600/700');
+  }
+
+  &--servicios {
+    @include bg-image('https://picsum.photos/id/145/1600/700');
+  }
+
+  &--portfolio {
+    @include bg-image('https://picsum.photos/id/1060/1600/700');
+  }
+
+  &--contacto {
+    @include bg-image('https://picsum.photos/id/1084/1600/700');
   }
 }

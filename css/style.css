@@ -155,7 +155,10 @@ img {
 }
 
 .hero {
-  background: linear-gradient(135deg, #1b2a4a 0%, rgb(13.3663366337, 20.7920792079, 36.6336633663) 100%);
+  background-image: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.85)), url("https://picsum.photos/id/1040/1600/900");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
   padding: 6rem 0;
   position: relative;
@@ -195,6 +198,30 @@ img {
 }
 .hero-interno p {
   color: rgba(255, 255, 255, 0.8);
+}
+.hero-interno--nosotros {
+  background-image: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.85)), url("https://picsum.photos/id/1027/1600/700");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-interno--servicios {
+  background-image: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.85)), url("https://picsum.photos/id/145/1600/700");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-interno--portfolio {
+  background-image: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.85)), url("https://picsum.photos/id/1060/1600/700");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-interno--contacto {
+  background-image: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.85)), url("https://picsum.photos/id/1084/1600/700");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .btn-outline-claro, .btn-secundario, .btn-primario {
