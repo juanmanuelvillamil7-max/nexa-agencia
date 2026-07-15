@@ -1,0 +1,110 @@
+// ===================================
+// TARJETAS (servicios, equipo, portfolio)
+// ===================================
+
+.card-servicio {
+  background-color: $color-white;
+  border-radius: $radius-md;
+  padding: $spacing-lg;
+  box-shadow: $shadow-card;
+  height: 100%;
+  border-bottom: 4px solid transparent;
+  @include card-hover;
+
+  &:hover {
+    border-bottom-color: $color-secondary;
+  }
+
+  .icono-servicio {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgba($color-secondary, 0.12);
+    color: $color-secondary;
+    font-size: 1.5rem;
+    margin-bottom: $spacing-md;
+    @include flex-center;
+  }
+
+  h3 {
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    color: $color-gray;
+  }
+}
+
+.card-equipo {
+  text-align: center;
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto $spacing-sm;
+    border: 4px solid $color-light;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .cargo {
+    color: $color-secondary;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
+
+.card-portfolio {
+  border-radius: $radius-md;
+  overflow: hidden;
+  position: relative;
+  box-shadow: $shadow-card;
+  @include card-hover;
+
+  img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .card-portfolio-info {
+    padding: $spacing-md;
+
+    .categoria {
+      color: $color-secondary;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+// Filtro de categorias en portfolio
+.filtro-portfolio {
+  text-align: center;
+  margin-bottom: $spacing-lg;
+
+  button {
+    background: none;
+    border: 2px solid $color-gray-light;
+    border-radius: $radius-sm;
+    padding: 0.4rem 1.1rem;
+    margin: 0.25rem;
+    font-weight: 600;
+    color: $color-gray;
+    @include transition;
+
+    &:hover,
+    &.activo {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}

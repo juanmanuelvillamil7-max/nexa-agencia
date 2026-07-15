@@ -1,0 +1,82 @@
+// ===================================
+// SECCIONES VARIAS (about preview, cta, stats, timeline)
+// ===================================
+
+.seccion-cta {
+  background-color: $color-secondary;
+  color: $color-white;
+  text-align: center;
+  padding: $spacing-xl 0;
+
+  h2 {
+    color: $color-white;
+  }
+
+  p {
+    color: rgba($color-white, 0.9);
+    max-width: 500px;
+    margin: 0 auto $spacing-lg;
+  }
+}
+
+.seccion-gris {
+  background-color: $color-light;
+}
+
+// Estadisticas (numeros grandes tipo "10 años", "120 clientes")
+.stats-nexa {
+  .stat-item {
+    text-align: center;
+
+    .stat-numero {
+      font-family: $font-heading;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $color-secondary;
+    }
+
+    .stat-label {
+      color: $color-gray;
+      font-weight: 500;
+    }
+  }
+}
+
+// Timeline de historia (usado en nosotros.html)
+.timeline-nexa {
+  border-left: 3px solid $color-secondary;
+  padding-left: $spacing-lg;
+
+  .timeline-item {
+    margin-bottom: $spacing-lg;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -#{$spacing-lg + 0.4rem};
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: $color-secondary;
+    }
+
+    .timeline-anio {
+      font-weight: 700;
+      color: $color-primary;
+    }
+  }
+}
+
+// Valores (mision / vision / valores) en nosotros.html
+.valor-item {
+  text-align: center;
+  padding: $spacing-md;
+
+  i {
+    font-size: 2rem;
+    color: $color-secondary;
+    margin-bottom: $spacing-sm;
+  }
+}
