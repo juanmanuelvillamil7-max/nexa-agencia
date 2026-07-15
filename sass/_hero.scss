@@ -3,7 +3,8 @@
 // ===================================
 
 .hero {
-  @include bg-image('https://picsum.photos/id/1040/1600/900');
+  // Obelisco de Buenos Aires al atardecer (Wikimedia Commons, uso libre)
+  @include bg-image('https://commons.wikimedia.org/wiki/Special:FilePath/Atardecer%20en%20el%20Obelisco%2C%20Buenos%20Aires.jpg?width=1600');
   color: $color-white;
   padding: $spacing-xl * 1.5 0;
   position: relative;

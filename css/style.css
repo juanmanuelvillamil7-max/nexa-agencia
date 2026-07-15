@@ -155,7 +155,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.85)), url("https://picsum.photos/id/1040/1600/900");
+  background-image: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.85)), url("https://commons.wikimedia.org/wiki/Special:FilePath/Atardecer%20en%20el%20Obelisco%2C%20Buenos%20Aires.jpg?width=1600");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
