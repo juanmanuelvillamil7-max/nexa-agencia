@@ -1,0 +1,56 @@
+// ===================================
+// FORMULARIO DE CONTACTO
+// ===================================
+
+.form-contacto {
+  background-color: $color-light;
+  padding: $spacing-lg;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+
+  .form-label {
+    font-weight: 600;
+    color: $color-primary;
+  }
+
+  .form-control {
+    border: 2px solid $color-gray-light;
+    border-radius: $radius-sm;
+    padding: 0.6rem 0.9rem;
+    margin-bottom: $spacing-md;
+    @include transition(border-color);
+
+    &:focus {
+      border-color: $color-secondary;
+      box-shadow: none;
+    }
+  }
+
+  textarea.form-control {
+    min-height: 130px;
+    resize: vertical;
+  }
+}
+
+.info-contacto {
+  .item-contacto {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $spacing-md;
+
+    i {
+      color: $color-secondary;
+      font-size: 1.3rem;
+      margin-right: $spacing-sm;
+      margin-top: 0.2rem;
+    }
+  }
+
+  .mapa-contacto {
+    border-radius: $radius-md;
+    overflow: hidden;
+    border: none;
+    width: 100%;
+    height: 280px;
+  }
+}

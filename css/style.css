@@ -407,6 +407,51 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.form-contacto {
+  background-color: #f7f7fb;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(18, 25, 43, 0.08);
+}
+.form-contacto .form-label {
+  font-weight: 600;
+  color: #1b2a4a;
+}
+.form-contacto .form-control {
+  border: 2px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+.form-contacto .form-control:focus {
+  border-color: #ff6b4a;
+  box-shadow: none;
+}
+.form-contacto textarea.form-control {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.info-contacto .item-contacto {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.info-contacto .item-contacto i {
+  color: #ff6b4a;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+.info-contacto .mapa-contacto {
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  width: 100%;
+  height: 280px;
+}
+
 .footer-nexa {
   background-color: #1b2a4a;
   color: #ffffff;
