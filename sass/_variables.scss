@@ -1,0 +1,43 @@
+// ===================================
+// VARIABLES GENERALES
+// Paleta e identidad de NEXA Agencia
+// ===================================
+
+// Colores principales
+$color-primary: #1b2a4a; // azul noche - marca
+$color-secondary: #ff6b4a; // naranja coral - acento / CTA
+$color-dark: #12192b;
+$color-light: #f7f7fb;
+$color-white: #ffffff;
+$color-gray: #6b7280;
+$color-gray-light: #e5e7eb;
+
+// Tipografia
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Roboto', sans-serif;
+
+// Tamaños de fuente
+$font-size-base: 1rem;
+$font-size-h1: 2.75rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+
+// Espaciados
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 2rem;
+$spacing-xl: 4rem;
+
+// Bordes
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 24px;
+
+// Sombras
+$shadow-card: 0 4px 16px rgba($color-dark, 0.08);
+$shadow-hover: 0 8px 24px rgba($color-dark, 0.15);
+
+// Breakpoints (para el mixin respond-to)
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;

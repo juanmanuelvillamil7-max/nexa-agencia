@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #12192b;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+h3, h2, h1 {
+  font-family: "Poppins", sans-serif;
+  color: #1b2a4a;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6b4a;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #1b2a4a;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container-nexa {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+@media (max-width: 768px) {
+  .container-nexa {
+    padding: 0 1rem;
+  }
+}
+
+.seccion {
+  padding: 4rem 0;
+}
+@media (max-width: 768px) {
+  .seccion {
+    padding: 2rem 0;
+  }
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.titulo-seccion p {
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+}
+
+.text-acento {
+  color: #ff6b4a;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

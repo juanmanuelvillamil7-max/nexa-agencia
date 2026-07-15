@@ -1,0 +1,54 @@
+// ===================================
+// MIXINS
+// ===================================
+
+// Mixin para responsive (mobile first)
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (max-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}
+
+// Mixin para centrar con flexbox
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+// Mixin para transiciones prolijas
+@mixin transition($props: all, $duration: 0.3s) {
+  transition: $props $duration ease-in-out;
+}
+
+// Mixin para el estilo de botones (recibe color de fondo y de texto)
+@mixin button-variant($bg, $text: $color-white) {
+  background-color: $bg;
+  color: $text;
+  border: 2px solid $bg;
+
+  &:hover {
+    background-color: transparent;
+    color: $bg;
+  }
+}
+
+// Mixin para tarjetas con hover
+@mixin card-hover {
+  @include transition(transform, 0.25s);
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $shadow-hover;
+  }
+}
