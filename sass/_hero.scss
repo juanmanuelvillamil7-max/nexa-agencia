@@ -1,0 +1,52 @@
+// ===================================
+// HERO (portada de cada pagina)
+// ===================================
+
+.hero {
+  background: linear-gradient(135deg, $color-primary 0%, darken($color-primary, 10%) 100%);
+  color: $color-white;
+  padding: $spacing-xl * 1.5 0;
+  position: relative;
+  overflow: hidden;
+
+  h1 {
+    color: $color-white;
+  }
+
+  p {
+    font-size: 1.15rem;
+    color: rgba($color-white, 0.85);
+    max-width: 550px;
+    margin-bottom: $spacing-lg;
+  }
+
+  .hero-img {
+    border-radius: $radius-lg;
+    box-shadow: $shadow-hover;
+  }
+
+  @include respond-to(tablet) {
+    padding: $spacing-xl 0;
+    text-align: center;
+
+    p {
+      margin: 0 auto $spacing-lg;
+    }
+  }
+}
+
+// Hero mas chico para paginas internas (nosotros, servicios, etc)
+.hero-interno {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: $spacing-lg * 2 0;
+  text-align: center;
+
+  h1 {
+    color: $color-white;
+  }
+
+  p {
+    color: rgba($color-white, 0.8);
+  }
+}
